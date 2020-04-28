@@ -1,7 +1,6 @@
 ---
+layout: home
 ---
-
-<link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}" />
 
 # TASKS
 

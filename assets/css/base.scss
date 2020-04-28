@@ -1,6 +1,40 @@
 ---
 ---
 
+@import "variables";
+@import "nav";
+
+body, html {
+  font-family: $sans;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $serif;
+}
+
+.content-area {
+  background-color: red;
+  background-image: url("https://thumbnails-photos.amazon.com/v1/thumbnail/TH6mBpv0RUuvh8ImoG_SOg?viewBox=1457%2C1092&ownerId=A3T5J038RZZERF");
+  background-size: cover;
+  height: calc(var(--vh, 1vh) *100);
+  margin-left: 70px;
+  max-height: calc(var(--vh, 1vh) * 100);
+  min-height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
+  position: relative;
+}
+
+.main-title {
+  color: $white;
+  font-family: $sans;
+  font-size: 6vw;
+  font-weight: 900;
+  line-height: 6vw;
+  text-align: center;
+}
+
 .task-list {
   list-style-type: none;
 }

@@ -1,6 +1,7 @@
 ---
+layout: home
+title: Home
+author: keithvenh
 ---
 
-{{ site.description }}
-
-<a href="/tasks">Tasks</a>
+<h1 class="main-title">The VenHuizens</h1>
