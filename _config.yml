@@ -3,7 +3,9 @@
 title: The VenHuizens
 email: keith.venhuizen@gmail.com
 description: >-
-  Hello! We are The VenHuizens. Because our King is Jesus, our joy shines through and
+  Hello! We are The VenHuizens.
+
+  Because our King is Jesus, our joy shines through and
   our words speak life. Our choices matter, our posture is humility and we give our
   lives to serve others.
 baseurl: ""
@@ -11,14 +13,17 @@ url: "https://keithvenh.github.io/"
 username: 
   github: keithvenh
   instagram: keithvenh
-  cashapp: $keithvenh
-  venmo: @keithvenh
+  cashapp: "$keithvenh"
+  venmo: "@keithvenh"
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
 
+sass:
+  sass_dir: _sass
+  
 # Exclude from processing.
 #
 # exclude:
