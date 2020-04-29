@@ -15,8 +15,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content-area {
-  background-color: red;
-  background-image: url("https://thumbnails-photos.amazon.com/v1/thumbnail/TH6mBpv0RUuvh8ImoG_SOg?viewBox=1457%2C1092&ownerId=A3T5J038RZZERF");
+  background-color: $primary-grey;
+  background-image: url("../images/sunset.jpeg");
+  background-position: bottom;
   background-size: cover;
   height: calc(var(--vh, 1vh) *100);
   margin-left: 70px;
