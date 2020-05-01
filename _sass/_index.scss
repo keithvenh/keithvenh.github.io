@@ -40,6 +40,16 @@
 
 .content-area.blogs {
   background-color: $white;
+  flex-direction: column;
+}
+
+.post-list {
+  display: flex;
+
+}
+.post-image.thumbnail {
+  max-width: 25vw;
+  max-height: 33vh;
 }
 
 // VIDEOS SECTION

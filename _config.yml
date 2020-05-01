@@ -24,6 +24,9 @@ plugins:
 sass:
   sass_dir: _sass
   
+collections:
+  videos:
+    output: true
 # Exclude from processing.
 #
 # exclude:
