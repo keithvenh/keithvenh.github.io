@@ -26,3 +26,34 @@
   line-height: 30px;
   text-align: center;
 }
+
+// ===== SECTION STYLES ===== //
+.title.section {
+  text-align: center;
+  margin-top: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2vw;
+}
+
+// BLOG SECTION
+
+.content-area.blogs {
+  background-color: $white;
+}
+
+// VIDEOS SECTION
+
+.content-area.videos {
+  background-color: $dark-white
+}
+
+// ABOUT SECTION
+.content-area.about {
+  background-color: $white;
+}
+
+//CONTACT SECTION
+.content-area.contact {
+  background-color: $dark-white;
+}
