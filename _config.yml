@@ -1,13 +1,13 @@
 # ===== SITE SETTINGS ===== #
 
 title: The VenHuizens
-email: keith.venhuizen@gmail.com
 description: >-
-  Hello! We are The VenHuizens.
-
-  Because our King is Jesus, our joy shines through and
-  our words speak life. Our choices matter, our posture is humility and we give our
-  lives to serve others.
+  A website for the VenHuizen Family to spread the joy of their King Jesus to 
+  their friends and family.
+email: keith.venhuizen@gmail.com
+mission: >-  
+  Because our King is Jesus, our joy shines through and our words speak life. 
+  Our choices matter, our posture is humility and we give our lives to serve others.
 baseurl: ""
 url: "https://keithvenh.github.io/"
 username: 

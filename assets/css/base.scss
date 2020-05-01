@@ -3,6 +3,7 @@
 
 @import "variables";
 @import "nav";
+@import "index";
 
 body, html {
   font-family: $sans;
@@ -15,9 +16,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content-area {
-  background-color: $primary-grey;
-  background-image: url("../images/sunset.jpeg");
-  background-position: bottom;
+  color: $darkest-grey;
+  background-position: center;
   background-size: cover;
   height: calc(var(--vh, 1vh) *100);
   margin-left: 70px;
@@ -25,15 +25,6 @@ h1, h2, h3, h4, h5, h6 {
   min-height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
   position: relative;
-}
-
-.main-title {
-  color: $white;
-  font-family: $sans;
-  font-size: 6vw;
-  font-weight: 900;
-  line-height: 6vw;
-  text-align: center;
 }
 
 .task-list {
