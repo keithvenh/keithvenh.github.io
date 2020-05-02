@@ -19,11 +19,12 @@ h1, h2, h3, h4, h5, h6 {
   color: $darkest-grey;
   background-position: center;
   background-size: cover;
-  height: calc(var(--vh, 1vh) *100);
   margin-left: 70px;
   min-height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
   position: relative;
+  padding-bottom: 24px;
+  box-sizing: border-box;
 }
 
 .title {
