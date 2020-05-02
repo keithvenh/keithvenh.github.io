@@ -15,28 +15,42 @@ author: keithvenh
 
 </div>
 
-<div class="content-area blogs">
+<div class="content-area section blogs">
   <h2 class="title section">Latest Blog Posts</h2>
   <div class="post-list">
   {% for post in site.posts %}
-    <a href="{{ post.url }}"><img class="post-image thumbnail" src="{{ post.image }}"></a>
-    {{ post.excerpt }}
+    {% if forloop.index < 6 %}
+    <div class="post-item">
+      <div class="post-image wrapper">
+        <a href="{{ post.url }}"><img class="post-image thumbnail" src="{{ post.image }}"></a>
+      </div>  
+      <h3 class="title post">{{ post.title }} | {{ post.date | date_to_string }}</h3>
+    </div>
+    {% endif %}
   {% endfor %}
   </div>
 </div>
 
-<div class="content-area videos">
+<div class="content-area section videos">
   <h2 class="title section">Latest Videos</h2>
+  <div class="post-list">
   {% for video in site.videos %}
-    <a href="{{ video.url }}">{{ video.video }}</a>
-    {{ video.summary }}
+    {% if forloop.index < 6 %}
+    <div class="post-item">
+      <div class="post-image wrapper">
+        <a href="{{ video.url }}"><img class="post-image thumbnail" src="{{ video.image }}"></a>
+      </div>  
+      <h3 class="title post">{{ video.title }} | {{ video.date | date_to_string }}</h3>
+    </div>
+    {% endif %}
   {% endfor %}
+  </div>
 </div>
 
-<div class="content-area about">
+<div class="content-area section about">
   <h2 class="title section">About Us</h2>
 </div>
 
-<div class="content-area contact">
+<div class="content-area section contact">
   <h2 class="title section">Contact Us</h2>
 </div>

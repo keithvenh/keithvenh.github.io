@@ -5,6 +5,7 @@
 
 .content-area.main {
   background-image: url("../images/sunset.jpeg");
+  max-height: calc(var(--vh, 1vh) * 100);
 }
 
 .title.main {
@@ -28,6 +29,7 @@
 }
 
 // ===== SECTION STYLES ===== //
+
 .title.section {
   text-align: center;
   margin-top: 24px;
@@ -45,11 +47,28 @@
 
 .post-list {
   display: flex;
-
+  justify-content: space-evenly;
 }
+
+.post-item {
+  flex: 0 1 auto;
+}
+
+.post-image.wrapper {
+  width: 24w;
+  height: 13.5vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
 .post-image.thumbnail {
-  max-width: 25vw;
-  max-height: 33vh;
+  width: 24vw;
+  transition: transform 1s;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 // VIDEOS SECTION
