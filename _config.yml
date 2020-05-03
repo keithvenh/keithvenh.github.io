@@ -27,6 +27,8 @@ sass:
 collections:
   videos:
     output: true
+  games:
+    output: true  
 # Exclude from processing.
 #
 # exclude:
