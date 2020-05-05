@@ -4,101 +4,17 @@ title: Home
 author: keithvenh
 ---
 
-<!-- ===== ABOVE THE FOLD ===== -->
 <div class="content-area content-area-main">
-  <div class="wrapper wrapper-callout">
-    <h1 class="title title-main">Join the Adventure!</h1>
+  <a href="/"><h1 class="title title-main">The VenHuizens</h1></a>
+  <div class="nav">
+    {% include nav-bar.html %}
+  </div>
 
-    <p class="subtitle subtitle-main">
-      Grab your free copy of our "Adventuring with God" Ebook that will help you find the adventure of a lifetime in loving God and loving others.
-    </p>
-
-    <div class="wrapper wrapper-form wrapper-form-ebook">
-      <form class="form form-ebook">
-        <input name="fname" type="text" required placeholder="Your First Name" />
-        <input name="email" type="email" required placeholder="Your Email" />
-        <div class="wrapper wrapper-buttons wrapper-buttons-ebook">
-          <button type="submit" class="button button-ebook button-ebook-submit">Submit</button>
-          <button type="button" class="button button-ebook button-ebook-no">No Thanks</button>
-        </div>
-      </form>
+  <div class="container container-subtitle">
+    <div class='wrapper wrapper-subtitle'>
+      <p class="subtitle subtitle-main">...we give our lives to serve others.</p>
+      <div class="subtitle-highlight"></div>
     </div>
   </div>
-</div>
 
-<!-- ===== SECTIONS ===== -->
-<!-- BLOG SECTION -->
-<div class="content-area content-area-section content-area-blogs" id="blogs">
-  <h2 class="title title-section title-blog">Latest Blog Posts</h2>
-  <div class="wrapper wrapper-posts">
-    {% for post in site.posts limit: 3 %}
-    <a href="{{ post.url }}" class="post">
-        <div class="wrapper wrapper-post-image">
-          <img class="post-image post-image-thumbnail" src="{{ post.image }}">
-        </div>
-        <h3 class="title title-post">{{ post.title }}</h3>
-        <p class="post-date">{{ post.date | date_to_long_string }}</p>
-        <p class="post-excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-    </a>
-    {% endfor %}
-  </div>
-</div>
-
-<div class="content-area content-area-section content-area-videos" id="videos">
-  <h2 class="title title-section title-videos">Latest Videos</h2>
-  <div class="wrapper wrapper-posts">
-    {% for video in site.videos limit: 3%}
-      <a href="{{video.url}}" class="post">
-        <div class="wrapper wrapper-post-image">
-          <img class="post-image post-image-thumbnail" src="{{ video.image }}">
-        </div>
-        <h3 class="title title-post">{{ video.title }}</h3>
-        <p class="post-date">{{ video.date | date_to_long_string }}</p>
-        <p class="post-excerpt">{{ video.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-      </div>
-    {% endfor %}
-    </a>
-</div>
-
-<div class="content-area content-area-section content-area-about" id="about">
-  <h2 class="title title-section title-about">About Us</h2>
-  <h3 class="title title-value">Our King Is Jesus</h3>
-  <p class="description description-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-  <h3 class="title title-value">Our Joy Shines Through</h3>
-  <p class="description description-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-  <h3 class="title title-value">Our Words Speak Life</h3>
-  <p class="description description-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-  <h3 class="title title-value">Our Choices Matter</h3>
-  <p class="description description-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-  <h3 class="title title-value">Our Posture Is Humility</h3>
-  <p class="description description-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-  <h3 class="title title-value">Our Lives Serve Others</h3>
-  <p class="description description-value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-
-<div class="content-area content-area-section content-area-contact" id="contact">
-
-  <div class="wrapper wrapper-callout">
-    <h2 class="title title-section title-contact">Contact Us</h1>
-
-    <p class="subtitle subtitle-contact">
-      We would love to hear from you!
-    </p>
-
-    <div class="wrapper wrapper-form wrapper-form-contact">
-      <form class="form form-contact">
-        <input name="fname" type="text" required placeholder="Your First Name" />
-        <input name="email" type="email" required placeholder="Your Email" />
-        <textarea name="message" required placeholder="Your Message"></textarea>
-        <div class="wrapper wrapper-buttons wrapper-buttons-contact">
-          <button type="submit" class="button button-contact button-contact-submit">Submit</button>
-        </div>
-      </form>
-    </div>
-  </div>
 </div>

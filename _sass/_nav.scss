@@ -1,75 +1,38 @@
 @import "variables";
 
-// NAVIGATION CONTAINER
+.nav {
+  position: relative;
+  top: -1rem;
+  margin: 0;
+}
+
 .nav-bar {
-  height: 10vh;
-  background-color: $primary-teal;
-  display: flex;
+  background-color: $white;
+  border-bottom: 5px solid $primary-gold;
+  padding-top: 1.5rem;
+  padding-bottom: .75rem;
 }
 
-// NAVITGATION LOGO
-.nav-brand {
-  background-color: $primary-peach;
-  transition: background-color 0.5s;
-
-  &:hover {
-    background-color: $primary-grey;
-  }
-}
-
-.brand-logo {
-  max-height: 10vh;
-  max-width: 10vh;
-}
-
-// NAVIGATION LINKS
 .nav-links {
-  flex-grow: 1;
-}
-
-.nav-links-list {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .nav-item {
-  text-transform: uppercase;
-  font-weight: 500;
+  text-transform: uppercase; 
+  font-weight: 700;
   letter-spacing: 2px;
-  
-  a {
-    color: $white;
-    text-decoration: none;
+  font-size: 1.1rem;
+  padding: 1vh;
+  text-align: center;
+  min-width: 125px;
 
+  a {
+    color: $darkest-grey;
+    border-top: 2px solid $white;
     &:hover {
-      color: $primary-peach;
+      border-top: 2px solid $primary-gold;
     }
   }
-}
-
-// DONATE LINK
-.nav-donate {
-  background-color: $primary-peach;
-  height: 10vh;
-  transition: background-color 0.5s;
-
-  &:hover {
-    background-color: $primary-grey;
-  }
-}
-.nav-donate-link {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  letter-spacing: 2px;
-  font-size: 0.9em;
-}
-.nav-donate-text {
-  transform: rotate(-90deg);
-  transform-origin: center center;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 10vh;
 }
