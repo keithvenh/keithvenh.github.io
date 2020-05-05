@@ -50,6 +50,15 @@
 }
 
 // DONATE LINK
+.nav-donate {
+  background-color: $primary-peach;
+  height: 10vh;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: $primary-grey;
+  }
+}
 .nav-donate-link {
   text-decoration: none;
   color: white;
@@ -57,15 +66,10 @@
   letter-spacing: 2px;
   font-size: 0.9em;
 }
-.nav-donate {
-  background-color: $primary-peach;
-  width: 10vh;
-  height: 10vh;
-  line-height: 10vh;
+.nav-donate-text {
+  transform: rotate(-90deg);
+  transform-origin: center center;
   text-transform: uppercase;
   text-align: center;
-  transition: background-color 0.5s;
-  &:hover {
-    background-color: $primary-grey;
-  }
+  line-height: 10vh;
 }
